@@ -1,0 +1,37 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vd_checkable_checkbox_unchecked">
+    <target android:name="icon_null">
+        <aapt:attr name="android:animation">
+            <set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:propertyName="scaleX"
+                        android:valueFrom="0.2"
+                        android:valueTo="0.18"/>
+                    <objectAnimator
+                        android:duration="300"
+                        android:propertyName="scaleX"
+                        android:valueFrom="0.18"
+                        android:valueTo="0.2"/>
+                </set>
+
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="box_inner_merged">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="166"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/buffalo"
+                    android:valueTo="@string/hippo"
+                    android:valueType="pathType"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
